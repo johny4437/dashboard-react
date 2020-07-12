@@ -3,22 +3,28 @@ import './style.css';
 import image1 from '../../images/prof1.jpg';
 import Bars from '../../charts/Bars';
 import Chart from '../../charts/Doughnut';
+import Form from   '../Forms/index';
 
 function Dashboard() {
     return (
         <div className="container">
             <div className="side-bar">
                 <div className="main">
+                    <input type="checkbox" id="menu"/>
+                    <label htmlFor="menu" className="menu-bar">
+                     <i className="fa fa-bars"></i>
+                 </label>
                 <div className="logo">
 
                    <i class="fa fa-life-ring"></i> <span>Dashboard</span>
                 </div>
                 <div className="side-items">
-                    <li><i className="fa fa-rocket"></i> Home</li>
-                    <li><i className="fa fa-user"></i> Usuários</li>
-                    <li><i className="fa fa-cog"></i> Configurações</li>
-                    <li><i className="fa fa-sign-out"></i> Sair</li>
+                    <li><i className="fa fa-rocket"></i> <span>Home</span> </li>
+                    <li><i className="fa fa-user"></i> <span>Usuários</span> </li>
+                    <li><i className="fa fa-cog"></i> <span>Configurações</span> </li>
+                    <li><i className="fa fa-sign-out"></i> <span>Sair</span> </li>
                 </div>
+                
                    
                 </div>
             </div>
@@ -61,7 +67,7 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className="information-2">
-                        
+                        <Form/>
                     </div>
                     <div className="information-3">
                         

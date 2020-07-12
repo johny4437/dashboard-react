@@ -61,7 +61,16 @@
     transition: 0.2s;
 }
 
+#menu{
+    display: none;
+}
 
+.menu-bar{
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
 
 
 /* SIDE MENU - END */
@@ -196,6 +205,7 @@
     background: #fff;
     border-radius: 10px;
     margin-left: 5px;
+    padding: 30px;
     
 }
 
@@ -208,3 +218,36 @@
     
 }
 /* INFORMATION_ END */
+
+/* MEDIA */
+
+@media(max-width:850px){
+    .side-items li span{
+        display: none;
+    }
+    .side-items{
+        width: 100px;
+    }
+    .side-items li i{
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        margin-left: 0;
+    }
+    .logo i{
+        display: none;
+    }
+    .logo span{
+        font-size: 28px;
+    }
+}
+
+@media(max-width:650px){
+    .logo span{
+        display: none;
+    }
+    .logo i{
+        display: block;
+        text-align: center;
+    }
+}
